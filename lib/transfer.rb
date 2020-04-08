@@ -16,7 +16,13 @@ def valid?
 end
 
 def execute_transaction
-  
+  # @sender - amount 
+  # @receiver + amount 
+  # if self.valid?
+  # @status = "completed"
+  # else 
+  # @status = rejected 
+  # "Transaction rejected. Please check your account balance."
 end
 
 
