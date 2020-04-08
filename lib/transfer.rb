@@ -19,7 +19,7 @@ def execute_transaction
   if @sender.vailid? && @receiver.valid? && @status == "pending" && @sender.balance > @amount
     @sender.balance -= @amount
     @reciver.balance += @amount
-    @status "complete"
+    @status = "complete"
   else
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
